@@ -3,11 +3,16 @@ import { render } from "react-dom";
 import { Provider } from "react-redux";
 import store from "./store";
 import "./style.scss";
+import MapContainer from "./components/MapContainer";
+import Layout from "./Layout";
 
 const App = () => {
   return (
     <div>
       <h1>Hello World</h1>
+      <Layout>
+        <MapContainer />
+      </Layout>
     </div>
   );
 };
