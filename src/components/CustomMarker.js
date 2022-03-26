@@ -18,7 +18,7 @@ export const CustomMarker = ({ data, popupOpen, setPopupOpen }) => {
       </Marker>
       {popupOpen[city.city] && (
         <Popup
-          key={city.latitude}
+          key={city.longitude}
           coordinates={[city.longitude, city.latitude]}
           onClose={() => isPopupOpen(false)}
           closeButton={true}

@@ -7,7 +7,7 @@ import { CustomMarker } from "./CustomMarker";
 import { useDispatch, useSelector } from "react-redux";
 import { LOAD_CITIES } from "../actions/loadCities";
 
-const MAP_STYLER_KEY = "Schd63xjX4TGBlkNBJKD";
+const MAP_STYLER_KEY = "Please enter your key here";
 
 const STYLE = `https://api.maptiler.com/maps/513b7e7a-9c1e-4d49-a301-8ea081569192/style.json?key=${MAP_STYLER_KEY}`;
 
