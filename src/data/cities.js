@@ -1,3 +1,5 @@
+const API = "https://jsonplaceholder.typicode.com/users";
+
 export const data = [
   {
     city: "New York",
@@ -180,3 +182,9 @@ export const data = [
     longitude: -106.427,
   },
 ];
+
+export const fetchDummyResult = async () => {
+  const result = await fetch(API);
+  const dummy_data = await result.json();
+  return dummy_data;
+};

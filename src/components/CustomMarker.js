@@ -2,6 +2,7 @@ import React from "react";
 import { Marker, Popup } from "react-mapbox-gl";
 
 export const CustomMarker = ({ data, popupOpen, setPopupOpen }) => {
+  console.log("result ois ", popupOpen);
   return data.map((city) => (
     <>
       <Marker
@@ -30,8 +31,8 @@ export const CustomMarker = ({ data, popupOpen, setPopupOpen }) => {
           }}
         >
           <div>
-            <p>City : {city.city}</p>
-            <p>Population: {city.population}</p>
+            <p>usewrname : {popupOpen.user && popupOpen.user.name}</p>
+            <p>Email: {popupOpen.user && popupOpen.user.email}</p>
           </div>
         </Popup>
       )}
